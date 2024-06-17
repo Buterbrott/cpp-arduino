@@ -1,7 +1,7 @@
 {
-  "name": "@lezer/cpp",
-  "version": "1.1.2",
-  "description": "lezer-based C++ grammar",
+  "name": "lezer-cpp-arduino",
+  "version": "1.0.0",
+  "description": "lezer-based C++ grammar (with Arduino support)",
   "main": "dist/index.cjs",
   "type": "module",
   "exports": {
@@ -10,22 +10,22 @@
   },
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Marijn Haverbeke <marijn@haverbeke.berlin>",
+  "author": "Buterbrott",
   "license": "MIT",
   "devDependencies": {
-    "@lezer/generator": "^1.0.0",
-    "mocha": "^10.2.0",
-    "rollup": "^2.52.2",
-    "@rollup/plugin-node-resolve": "^9.0.0"
+    "@lezer/generator": "^1.7.0",
+    "mocha": "^10.4.0",
+    "rollup": "^4.18.0",
+    "@rollup/plugin-node-resolve": "^15.2.3"
   },
   "dependencies": {
-    "@lezer/common": "^1.2.0",
-    "@lezer/highlight": "^1.0.0",
-    "@lezer/lr": "^1.0.0"
+    "@lezer/common": "^1.2.1",
+    "@lezer/highlight": "^1.2.0",
+    "@lezer/lr": "^1.4.1"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/lezer-parser/cpp.git"
+    "type": "git",
+    "url": "git+https://github.com/Buterbrott/cpp-arduino.git"
   },
   "scripts": {
     "build": "lezer-generator src/cpp.grammar -o src/parser && rollup -c",
